@@ -3,8 +3,7 @@ import concurrent.futures
 
 
 def createThread(start, end, iterable):
-    array = iterable[start:end]
-    return  sum(array)
+    return sum(iterable[start:end])
 
 
 def calculate_with_threads(array, threads):
